@@ -23,7 +23,7 @@ Hello {},My Name is {} !.
 
 എന്നെ നോക്കി നടത്തുന്നത് [{}](https://t.me/{}) ആണ്...!! 
 
-/donate: Botന്റെ കുറച്ചു ഉള്ള വിവരങ്ങൾ...
+/help: Botന്റെ കുറച്ചു ഉള്ള വിവരങ്ങൾ...
 """
 
 HELP_STRINGS = """
@@ -136,8 +136,8 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(DEVIL_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_USERNAME ),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="✔️OWNER",url="t.me/Qwertyclass".format(bot.username)),InlineKeyboardButton(text="😎SUBSCRIBE NOW.",url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")],  
-                                                [InlineKeyboardButton(text="👨‍👨‍👦‍👦GROUP",url="https://t.me/Malayalam_Movies_Groups"),InlineKeyboardButton(text="🎥CHANNEL",url="https://t.me/MYM_LINKZ")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
+                                                [[InlineKeyboardButton(text="😎OWNER",url="t.me/Qwertyclass".format(bot.username)),InlineKeyboardButton(text="😎SUBSCRIBE NOW.",url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")],  
+                                                [InlineKeyboardButton(text="👨‍👨‍👦‍👦GROUP",url="https://t.me/Malayalam_Movie_Group"),InlineKeyboardButton(text="Second CHANNEL",url="https://t.me/MYM_LINKZ")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
     else:
          
 
