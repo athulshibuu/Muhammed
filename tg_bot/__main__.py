@@ -137,7 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(DEVIL_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_USERNAME ),reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="😎OWNER",url="t.me/Vijayuyir".format(bot.username)),InlineKeyboardButton(text="Channel.",url="https://t.me/Cinema_Club_2020")],  
-                                                [InlineKeyboardButton(text="👨‍👨‍👦‍👦GROUP",url="https://t.me/Malayalam_Movie_Group"),InlineKeyboardButton(text="Second CHANNEL",url="https://t.me/Malayalam_HD_Movies_2020")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
+                                                [InlineKeyboardButton(text="👨‍👨‍👦‍👦GROUP",url="https://t.me/Malayalam_Movie_Group"),InlineKeyboardButton(text="Second CHANNEL",url="https://t.me/New_Malayalam_H_D_Movies")]]),disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
     else:
          
 
